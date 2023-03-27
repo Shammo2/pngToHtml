@@ -1,0 +1,133 @@
+Body{
+    max-width: 1600px;
+	margin: auto;
+	background-color: rgb(54, 54, 54);
+}
+
+#section1{
+    width: auto;
+	height: 1000px;
+	background-image: url("_assets/Home.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover; 
+}
+#section2{
+    background-color: rgb(245, 245, 245);
+    height: 500px;
+    
+}
+#section3{
+    background-image: url("_assets/Bg.png");
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover; 
+    padding-top: 50px;
+}
+#section4{
+    background-color: #ffffff;
+    padding-top: 20px;
+    height: 1050px;
+}
+#section5{
+    background-color: #ffffff;
+}
+#calendar{
+	position: relative;
+	top: -720px;
+	right: -120px;
+}
+
+#MountainTitle{
+	position: relative;
+	top: -1225px;
+	right: -190px;
+	color: #ffffff;
+	font-size: 30px;
+}
+
+#Climb{
+	padding-left: 200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#banner{
+	height: 50px;
+	background-color: #414f6b;
+	position: relative;
+	top: -920px;
+}
+
+
+#nav1{
+	position: relative;
+	top: 45px;
+	right: -1000px; 
+	color: #ffffff;
+	text-decoration: underline;
+	font-family: 'Lato';font-size: 22px;
+	
+}
+#nav2{
+	position: relative;
+	top: -3px;
+	right: -1200px; 
+	color: #ffffff;
+	text-decoration: underline;
+	font-family: 'Lato';font-size: 22px;
+}
+#nav22{
+	position: relative;
+	top: -140px;
+	right: -100px; 
+}
+#nav12{
+	position: relative;
+	top: 45px;
+	right: -1000px; 
+	color: #000000;
+	text-decoration: underline;
+	font-family: 'Lato';font-size: 22px;
+	
+}
+#nav22{
+	position: relative;
+	top: -3px;
+	right: -1200px; 
+    color: #000000;
+	text-decoration: underline;
+	font-family: 'Lato';font-size: 22px;
+}
+#nav23{
+	position: relative;
+	top: -140px;
+	right: -100px; 
+}
+#nav24{
+	position: relative;
+	top: -60px;
+	right: -100px; 
+}
+
+#historytext{
+    text-align: justify;
+    width: 900px;
+    position: relative;
+    top: -10px;
+    left: 250px;
+   
+}
+
+footer{
+	background-color: #414f6b;
+	height: 100px;
+    
+}
+
+#copywrite{
+	position: relative;
+	left:1200px;
+	bottom: -60px;
+}

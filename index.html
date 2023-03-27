@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style>
+    #faded .slides {
+				width: 900px;
+				height: 700px;
+				margin-left:auto;
+				margin-right:auto;
+			}
+			#faded img {
+				position:relative;
+				left: 0px;
+				top: 0px;
+			}
+  </style>
+</head>
+<body>
+<div id="section1">
+    <nav >
+        <p id="nav1"> 01. History </p>
+        <p id="nav2"> 02. Team </p>
+        <img  src="_assets/Logo.png" id="nav24">
+    </nav>
+</div>
+<div id="section2">
+    <p id="nav12"> 01. History </p>
+    <p id="nav22"> 02. Team </p>
+    <img  src="_assets/Logo.png" id="nav23">
+    
+    <Img src= "_assets/history.png"></Img>
+		<p id="historytext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. 
+			Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim 
+			Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
+		
+
+</div>
+<div id="section3">
+    <section id="faded">
+        <div class="slides">
+            <img class="slideshow" src="_assets/photo-1443980995706-8d107e98e707.png" />
+            <img class="slideshow" src="_assets/photo-1458442310124-dde6edb43d10.png" />
+            <img class="slideshow" src="_assets/photo-1443980995706-8d107e98e707.png" />
+            <img class="slideshow" src="_assets/photo-1458442310124-dde6edb43d10.png" />
+        </div>
+    </section>
+
+</div>
+<div id="section4">
+    <Img id="Climb" src= "_assets/Climb.png"></Img>
+        <img src="_assets/mountain1.png">
+		<div id="banner"></div>
+		<img id="calendar" src="_assets/Content.png"></img>
+		<p id="MountainTitle">Mountain 1       Mountain2</p>
+
+</div>
+<footer>
+    <p id="copywrite"> copywrite 2016 ALL RIGHTS RESERVED</p>
+    <Img id="pic" src= "_assets/Logo.png"></Img>
+</footer>
+</body>
+<script type="text/javascript" src="_js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript">
+			
+			$(document).ready(function () {
+				console.log('set');
+				setTimeout(slide_fade,1500);
+			});
+			
+			function slide_fade() {
+				console.log('fading');
+				var theLastSlide = $('#faded img:last');
+				theLastSlide.animate({'opacity':'0'}, 1500, slide_shuffle);
+				function slide_shuffle() {
+					theLastSlide.prependTo('#faded .slides');
+					theLastSlide.css({'opacity':'1'});
+					setTimeout(slide_fade,2750);
+				}
+
+			}
+		</script>
+
+</html>
